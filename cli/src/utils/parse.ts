@@ -261,7 +261,7 @@ const parseConnectOptions = (
     willUserProperties,
   } = options
 
-  const connectOptions: IClientOptions = {
+  const connectOptions: IClientOptions & { passphrase?: string } = {
     protocolVersion: mqttVersion,
     hostname,
     port,

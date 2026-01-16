@@ -23,6 +23,8 @@ const setWillMQTT5Properties = (option: WillPropertiesModel) => {
   return Object.fromEntries(Object.entries(properties).filter(([_, v]) => v !== null && v !== undefined))
 }
 
+type ClientOptionsWithPassphrase = IClientOptions & { passphrase?: string }
+
 const getClientOptions = (record: ConnectionModel): IClientOptions => {
   const mqttVersionDict = {
     '3.1.1': 4,
@@ -47,7 +49,7 @@ const getClientOptions = (record: ConnectionModel): IClientOptions => {
     keyPassword,
   } = record
   const protocolVersion = mqttVersionDict[mqttVersion]
-  const options: IClientOptions = {
+  const options: ClientOptionsWithPassphrase = {
     clientId,
     keepalive,
     clean,
