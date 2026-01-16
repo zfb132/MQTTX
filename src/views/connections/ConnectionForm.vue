@@ -240,6 +240,12 @@
                     <i class="el-icon-folder-opened"></i>
                   </a>
                 </el-col>
+                <el-col :span="22">
+                  <el-form-item :label="$t('connections.keyPassword')" prop="keyPassword">
+                    <el-input size="mini" v-model="record.keyPassword" type="password" clearable></el-input>
+                  </el-form-item>
+                </el-col>
+                <el-col :span="2"></el-col>
               </el-row>
             </el-card>
           </template>

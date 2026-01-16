@@ -244,6 +244,13 @@ export default {
     ja: 'クライアントキー',
     hu: 'Kliens kulcs fájl',
   },
+  keyPassword: {
+    zh: '客户端 key 密码',
+    en: 'Client key password',
+    tr: 'İstemci anahtar parolası',
+    ja: 'クライアントキーパスワード',
+    hu: 'Kliens kulcs jelszó',
+  },
   connectionTimeout: {
     zh: '连接超时时长',
     en: 'Connect Timeout',
