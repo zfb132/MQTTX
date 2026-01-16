@@ -191,6 +191,7 @@ mqttx conn --help
 | -l, --protocol <PROTO>                           | 连接时的协议，支持 mqtt、mqtts、ws、wss，默认为 mqtt                                       |
 | --path <PATH>                                    | websocket 的路径，默认为 /mqtt                                                             |
 | --key <PATH>                                     | key 文件的路径                                                                             |
+| --key-password <PASS>                            | key 文件的密码                                                                             |
 | --cert <PATH>                                    | cert 文件的路径                                                                            |
 | --ca                                             | ca 证书的文件路径                                                                          |
 | --insecure                                       | 取消服务器的证书校验                                                                       |
@@ -242,6 +243,7 @@ mqttx sub --help
 | -rap, --retain-as-published                      | MQTT 5.0 订阅选项中的 retain as published 标识                                             |
 | -rh, --retain-handling <0/1/2>                   | MQTT 5.0 订阅选项中的 retain handling 标识                                                 |
 | --key <PATH>                                     | key 文件的路径                                                                             |
+| --key-password <PASS>                            | key 文件的密码                                                                             |
 | --cert <PATH>                                    | cert 文件的路径                                                                            |
 | --ca                                             | ca 证书的文件路径                                                                          |
 | --insecure                                       | 取消服务器的证书校验                                                                       |
@@ -301,6 +303,7 @@ mqttx pub --help
 | -l, --protocol <PROTO>                           | 连接时的协议，支持 mqtt、mqtts、ws、wss，默认为 mqtt                                       |
 | --path <PATH>                                    | websocket 的路径，默认为 /mqtt                                                             |
 | --key <PATH>                                     | key 文件的路径                                                                             |
+| --key-password <PASS>                            | key 文件的密码                                                                             |
 | --cert <PATH>                                    | cert 文件的路径                                                                            |
 | --ca                                             | ca 证书的文件路径                                                                          |
 | --insecure                                       | 取消服务器的证书校验                                                                       |

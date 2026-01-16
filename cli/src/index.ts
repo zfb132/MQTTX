@@ -85,6 +85,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')
@@ -204,6 +205,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')
@@ -336,6 +338,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')
@@ -450,6 +453,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')
@@ -574,6 +578,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')
@@ -690,6 +695,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')
@@ -816,6 +822,7 @@ export class Commander {
         parseKeyValues,
       )
       .option('--key <PATH>', 'path to the key file')
+      .option('--key-password <PASS>', 'password for the key file')
       .option('--cert <PATH>', 'path to the cert file')
       .option('--ca <PATH>', 'path to the ca certificate')
       .option('--insecure', 'do not verify the server certificate')

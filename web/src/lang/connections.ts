@@ -174,6 +174,11 @@ export default {
     en: 'Client key file',
     ja: 'クライアント キー ファイル',
   },
+  keyPassword: {
+    zh: '客户端 key 密码',
+    en: 'Client key password',
+    ja: 'クライアントキーのパスワード',
+  },
   connectionTimeout: {
     zh: '连接超时时长',
     en: 'Connect Timeout',
