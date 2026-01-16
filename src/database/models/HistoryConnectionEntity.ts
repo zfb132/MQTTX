@@ -81,6 +81,9 @@ export default class HistoryConnectionEntity {
   @Column({ type: 'varchar' })
   key!: string
 
+  @Column({ type: 'varchar', nullable: true })
+  keyPassword?: string
+
   @Column({ type: 'varchar', default: '' })
   lastWillTopic!: string
 

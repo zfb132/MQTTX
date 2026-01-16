@@ -94,6 +94,9 @@ export default class ConnectionEntity {
   @Column({ type: 'varchar' })
   key!: string
 
+  @Column({ type: 'varchar', nullable: true })
+  keyPassword?: string
+
   @Column({ type: 'boolean', default: false })
   isCollection!: false
 

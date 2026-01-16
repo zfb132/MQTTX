@@ -246,6 +246,7 @@ declare global {
     ca: string
     cert: string
     key: string
+    keyPassword?: string
   }
 
   interface SSLContent {

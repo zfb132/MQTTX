@@ -235,6 +235,7 @@ const parseConnectOptions = (
     path,
     wsHeaders,
     key,
+    keyPassword,
     cert,
     ca,
     insecure,
@@ -276,6 +277,10 @@ const parseConnectOptions = (
 
   if (key) {
     connectOptions.key = fs.readFileSync(key)
+  }
+
+  if (keyPassword) {
+    ;(connectOptions as IClientOptions & { passphrase?: string }).passphrase = keyPassword
   }
 
   if (cert) {

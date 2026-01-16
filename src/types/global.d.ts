@@ -218,6 +218,7 @@ declare global {
     ca: string
     cert: string
     key: string
+    keyPassword?: string
   }
 
   // MQTT 5 feature
