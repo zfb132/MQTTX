@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm'
 
-export class KeyPassword1725524000000 implements MigrationInterface {
-  name = 'KeyPassword1725524000000'
+export class KeyPassword1742835643810 implements MigrationInterface {
+  name = 'KeyPassword1742835643810'
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`ALTER TABLE "ConnectionEntity" ADD COLUMN "keyPassword" varchar`)
