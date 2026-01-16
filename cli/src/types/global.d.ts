@@ -37,6 +37,7 @@ declare global {
     path?: string
     wsHeaders?: Record<string, string>
     key?: string
+    keyPassword?: string
     cert?: string
     ca?: string
     insecure?: boolean

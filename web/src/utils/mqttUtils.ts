@@ -44,6 +44,7 @@ const getClientOptions = (record: ConnectionModel): IClientOptions => {
     rejectUnauthorized,
     ALPNProtocols,
     clientIdWithTime,
+    keyPassword,
   } = record
   const protocolVersion = mqttVersionDict[mqttVersion]
   const options: IClientOptions = {
@@ -92,6 +93,9 @@ const getClientOptions = (record: ConnectionModel): IClientOptions => {
         options.ca = sslRes.ca
         options.cert = sslRes.cert
         options.key = sslRes.key
+      }
+      if (keyPassword) {
+        ;(options as IClientOptions & { passphrase?: string }).passphrase = keyPassword
       }
     }
   }
@@ -188,6 +192,7 @@ export const getDefaultRecord = (): ConnectionModel => {
     ca: '',
     cert: '',
     key: '',
+    keyPassword: '',
     mqttVersion: '5.0',
     subscriptions: [],
     messages: [],
